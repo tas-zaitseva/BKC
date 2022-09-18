@@ -90,8 +90,8 @@
 
   .loader__button::after {
     background: url(./svg/add.svg) center center no-repeat;
-    transform: translate(-50%, -50%);
     background-size: contain;
+    transform: translate(-50%, -50%);
     width: 50%;
     height: 50%;
   }
@@ -123,6 +123,7 @@ input.file:valid + .label {
     .loader__img {
       width: rem(50px);
       background: url(./svg/uploaded1.svg) center center no-repeat;
+      background-size: contain;
     }
   }
 
@@ -130,6 +131,7 @@ input.file:valid + .label {
     .loader__img {
       width: rem(50px);
       background: url(./svg/uploaded2.svg) center center no-repeat;
+      background-size: contain;
     }
   }
 }

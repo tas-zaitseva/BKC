@@ -9,19 +9,41 @@
     min-height: rem(190px);
   }
 
-  .operation__controls {
-    margin-top: auto;
-  }
 }
 
 .operation:last-child {
   min-height: auto;
 }
 
+.operation__controls {
+  margin-top: auto;
+}
+
 .operation__text {
   text-align: center;
   margin-bottom: rem(20px);
   max-width: rem(274px);
+}
+
+.operation__subtitle {
+  font-size: rem(12px);
+  line-height: rem(14px);
+  color: $red;
+  
+  @include phonesPortrait {
+    font-size: rem(16px);
+    line-height: rem(16px);
+  }
+
+  @include phonesLandscape {
+    font-size: rem(16px);
+    line-height: rem(16px);
+  }
+}
+
+.operation__inputs {
+  display: flex;
+  column-gap: rem(34px);
 }
 
 .operation--with-button {
@@ -40,25 +62,4 @@
       margin-bottom: rem(20px);
     }
   }
-}
-
-.operation__subtitle {
-  font-size: rem(12px);
-  line-height: rem(14px);
-  color: $red;
-
-  @include phonesPortrait {
-    font-size: rem(16px);
-    line-height: rem(16px);
-  }
-
-  @include phonesLandscape {
-    font-size: rem(16px);
-    line-height: rem(16px);
-  }
-}
-
-.operation__inputs {
-  display: flex;
-  column-gap: rem(34px);
 }

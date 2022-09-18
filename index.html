@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <link rel="stylesheet" href="./main.css">
-  <title>Document</title>
+  <title>BKC</title>
 </head>
 <body>
   <div class="wrapper">
@@ -24,13 +24,18 @@
             <ul class="appellate__operations">
               <li class="appelate__operations-item operation">
                 <div class="operation__text">СКАЧАЙТЕ И ЗАПОЛНИТЕ два&nbspфайла с заявлением на&nbspапелляцию</div>
-                <div class="operation__subtitle"></div>
                 <div class="operation__controls">
                   <ul class="operation__inputs">
                     <li class="operation__input loader download">
                       <a href="#" download class="loader__link">
                         <div class="loader__block">
-                          <div class="loader__button"></div>
+                          <div class="loader__button">
+                            <div class="loader__button-icon">
+                              <svg class="loader__button-pic">
+                                <use xlink:href="./svg/sprite.svg#download"></use>
+                              </svg>
+                            </div>
+                          </div>
                           <div class="loader__img">
                             <svg class="loader__pic">
                               <use xlink:href="./svg/sprite.svg#pdf1"></use>
@@ -43,7 +48,13 @@
                     <li class="operation__input loader download">
                       <a href="#" download class="loader__link">
                         <div class="loader__block">
-                          <div class="loader__button"></div>
+                          <div class="loader__button">
+                            <div class="loader__button-icon">
+                              <svg class="loader__button-pic">
+                                <use xlink:href="./svg/sprite.svg#download"></use>
+                              </svg>
+                            </div>
+                          </div>
                           <div class="loader__img">
                             <svg class="loader__pic">
                               <use xlink:href="./svg/sprite.svg#pdf2"></use>
@@ -58,27 +69,66 @@
               </li>
               <li class="appelate__operations-item operation">
                 <div class="operation__text">ОТСКАНИРУЙТЕ И ЗАГРУЗИТЕ заполненные заявления</div>
-                <div class="operation__subtitle"></div>
                 <div class="operation__controls">
                   <ul class="operation__inputs">
                     <li class="operation__input">
-                      <input type="file" required accept=".pdf, image/*" name="upload" id="upload1" class="file hidden">
+                      <input type="file" required accept=".pdf, image/*" name="upload" id="upload1" class="input-file hidden">
                       <label for="upload1" class="label">
                         <div class="loader upload upload--1">
                           <div class="loader__block">
-                            <div class="loader__button"></div>
-                            <div class="loader__img"></div>
+                            <div class="loader__button">
+                              <div class="loader__button-icon">
+                                <svg class="loader__button-pic">
+                                  <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                              </div>
+                              <div class="loader__button-icon hidden">
+                                <svg class="loader__button-pic">
+                                  <use xlink:href="./svg/sprite.svg#edit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="loader__img">
+                              <svg class="loader__pic">
+                                <use xlink:href="./svg/sprite.svg#upload1"></use>
+                              </svg>
+                            </div>
+                            <div class="loader__img hidden">
+                              <svg class="loader__pic">
+                                <use xlink:href="./svg/sprite.svg#uploaded"></use>
+                              </svg>
+                            </div>
                           </div>
                         </div>
                       </label>
                     </li>
                     <li class="operation__input">
-                      <input type="file" required accept=".pdf, image/*" name="upload" id="upload2" class="file hidden">
+                      <input type="file" required accept=".pdf, image/*" name="upload" id="upload2" class="input-file hidden">
                       <label for="upload2" class="label">
                         <div class="loader upload upload--2">
                           <div class="loader__block">
-                            <div class="loader__button"></div>
-                            <div class="loader__img"></div>
+                            <div class="loader__button">
+                              <div class="loader__button-icon">
+                                <svg class="loader__button-pic">
+                                  <use xlink:href="./svg/sprite.svg#add"></use>
+                                </svg>
+                              </div>
+                              <div class="loader__button-icon hidden">
+                                <svg class="loader__button-pic">
+                                  <use xlink:href="./svg/sprite.svg#edit"></use>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="loader__img">
+                              <svg class="loader__pic">
+                                <use xlink:href="./svg/sprite.svg#upload2"></use>
+                              </svg>
+                            </div>
+                            <div class="loader__img hidden">
+                              <svg class="loader__pic">
+                                <use xlink:href="./svg/sprite.svg#uploaded"></use>
+                              </svg>
+                            </div>
                           </div>
                         </div>
                       </label>

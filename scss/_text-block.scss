@@ -1,0 +1,27 @@
+.text-block__title {
+  margin-bottom: 20px;
+}
+
+.text-block__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  line-height: 21px;
+}
+
+.text-block__item {
+  margin-left: 26px;
+  display: flex;
+  align-items: center;
+}
+
+.text-block__item::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  line-height: 21px;
+  background: $red;
+  border-radius: 50%;
+  margin-right: 8px;
+}

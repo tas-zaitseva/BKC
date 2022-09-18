@@ -1,0 +1,327 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap);
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: "Roboto", helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 21px;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+input.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 93%;
+  max-width: 1060px;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.appellate__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.appellate__information {
+  margin-bottom: 44px;
+}
+
+.appellate__operations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.appelate__operations-item {
+  max-width: 274px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text-block__title {
+  margin-bottom: 20px;
+}
+
+.text-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+  line-height: 21px;
+}
+
+.text-block__item {
+  margin-left: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.text-block__item::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  line-height: 21px;
+  background: #EC1630;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.operation {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 217px;
+}
+.operation .operation__controls {
+  margin-top: auto;
+}
+
+.operation--with-button .operation__text {
+  max-width: 183px;
+}
+.operation--with-button .operation__controls {
+  margin-top: 0;
+}
+.operation--with-button .operation__subtitle {
+  margin-bottom: 44px;
+}
+
+.operation__text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.operation__subtitle {
+  font-size: 12px;
+  line-height: 14px;
+  color: #EC1630;
+}
+
+.operation__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 34px;
+     -moz-column-gap: 34px;
+          column-gap: 34px;
+  position: relative;
+  bottom: 0;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 1.54;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 7px 50px;
+  background: #EC1630;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.loader {
+  width: 78px;
+  height: 98px;
+  border: 5px solid #C4C4C4;
+  border-radius: 8px;
+  position: relative;
+  padding: 5px;
+}
+
+.loader__link {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.loader__block {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loader__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #EC1630;
+  border: 3px solid #C4C4C4;
+  position: absolute;
+  left: 100%;
+  bottom: 100%;
+  -webkit-transform: translate(-60%, 50%);
+          transform: translate(-60%, 50%);
+}
+
+.loader__button::after {
+  display: block;
+  content: "";
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -56%);
+          transform: translate(-50%, -56%);
+  z-index: 100;
+}
+
+.loader__img {
+  color: #EC1630;
+  margin-bottom: 14px;
+}
+
+.loader__text {
+  color: #EC1630;
+  font-size: 12px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.loader.download .loader__button::after {
+  background: url(./../svg/download.svg) center center no-repeat;
+  background-size: contain;
+}
+.loader.download .loader__img {
+  width: 31px;
+  height: 42px;
+}
+
+.loader.upload .loader__block {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.loader.upload .loader__img {
+  width: 16px;
+  height: 24px;
+  margin-bottom: 0;
+}
+.loader.upload .loader__button::after {
+  background: url(./../svg/add.svg) center center no-repeat;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-size: contain;
+  width: 50%;
+  height: 50%;
+}
+
+.loader.upload--1 .loader__img {
+  background: url(./../svg/upload1.svg) center center no-repeat;
+}
+
+.loader.upload--2 .loader__img {
+  background: url(./../svg/upload2.svg) center center no-repeat;
+}
+
+input.file:valid + .label .loader__button::after {
+  background: url(./../svg/edit.svg) center center no-repeat;
+  background-size: contain;
+  width: 55%;
+  height: 55%;
+}
+input.file:valid + .label .loader.upload--1 .loader__img {
+  width: 50px;
+  background: url(./../svg/uploaded1.svg) center center no-repeat;
+}
+input.file:valid + .label .loader.upload--2 .loader__img {
+  width: 50px;
+  background: url(./../svg/uploaded2.svg) center center no-repeat;
+}
+
+.warning {
+  background: #EEEEEE;
+  padding: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  border: 1px solid #EC1630;
+}

@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  font-family: 'Roboto', helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 21px;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+input.hidden {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: $container-width;
+  max-width: $container-max-width;
+}

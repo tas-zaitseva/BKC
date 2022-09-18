@@ -1,0 +1,29 @@
+//colors
+$dark-gray: #131718;
+$red: #EC1630;
+$gray: #C4C4C4;
+$light-gray: #EEEEEE;
+
+//rem units
+$baseFontSize: 18px;
+
+//sizes
+$container-max-width: 1060px;
+$container-width: 93%;
+
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
+//importing files
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap);
+@import url(https://necolas.github.io/normalize.css/8.0.1/normalize.css);
+
+@import 'layout';
+@import 'section';
+@import 'appellate';
+@import 'text-block';
+@import 'operation';
+@import 'button';
+@import 'loader';
+@import 'warning';

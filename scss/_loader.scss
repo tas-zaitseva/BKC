@@ -1,0 +1,125 @@
+.loader {
+  width: 78px;
+  height: 98px;
+  border: 5px solid $gray;
+  border-radius: 8px;
+  position: relative;
+  padding: 5px;
+}
+
+.loader__link {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.loader__block {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.loader__button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: $red;
+  border: 3px solid $gray;
+  position: absolute;
+  left: 100%;
+  bottom: 100%;
+  transform: translate(-60%, 50%);
+}
+
+.loader__button::after {
+  display: block;
+  content: '';
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -56%);
+  z-index: 100;
+}
+
+.loader__img {
+  color: $red;
+  margin-bottom: 14px;
+}
+
+.loader__text {
+  color: $red;
+  font-size: 12px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.loader.download {
+  .loader__button::after {
+    background: url(./../svg/download.svg) center center no-repeat;
+    background-size: contain;
+  }
+
+  .loader__img {
+    width: 31px;
+    height: 42px;
+  }
+}
+
+.loader.upload {
+  .loader__block {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .loader__img {
+    width: 16px;
+    height: 24px;
+    margin-bottom: 0;
+  }
+
+  .loader__button::after {
+    background: url(./../svg/add.svg) center center no-repeat;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    width: 50%;
+    height: 50%;
+  }
+}
+
+.loader.upload--1 {
+  .loader__img {
+    background: url(./../svg/upload1.svg) center center no-repeat;
+  }
+}
+
+.loader.upload--2 {
+  .loader__img {
+    background: url(./../svg/upload2.svg) center center no-repeat;
+  }
+}
+
+input.file:valid + .label {
+  .loader__button::after {
+    background: url(./../svg/edit.svg) center center no-repeat;
+    background-size: contain;
+    width: 55%;
+    height: 55%;
+  }
+
+  .loader.upload--1 {
+    .loader__img {
+      width: 50px;
+      background: url(./../svg/uploaded1.svg) center center no-repeat;
+    }
+  }
+
+  .loader.upload--2 {
+    .loader__img {
+      width: 50px;
+      background: url(./../svg/uploaded2.svg) center center no-repeat;
+    }
+  }
+}

@@ -265,7 +265,7 @@ input.hidden {
 }
 
 .loader.download .loader__button::after {
-  background: url(./../svg/download.svg) center center no-repeat;
+  background: url(./svg/download.svg) center center no-repeat;
   background-size: contain;
 }
 .loader.download .loader__img {
@@ -287,7 +287,7 @@ input.hidden {
   margin-bottom: 0;
 }
 .loader.upload .loader__button::after {
-  background: url(./../svg/add.svg) center center no-repeat;
+  background: url(./svg/add.svg) center center no-repeat;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-size: contain;
@@ -296,26 +296,26 @@ input.hidden {
 }
 
 .loader.upload--1 .loader__img {
-  background: url(./../svg/upload1.svg) center center no-repeat;
+  background: url(./svg/upload1.svg) center center no-repeat;
 }
 
 .loader.upload--2 .loader__img {
-  background: url(./../svg/upload2.svg) center center no-repeat;
+  background: url(./svg/upload2.svg) center center no-repeat;
 }
 
 input.file:valid + .label .loader__button::after {
-  background: url(./../svg/edit.svg) center center no-repeat;
+  background: url(./svg/edit.svg) center center no-repeat;
   background-size: contain;
   width: 55%;
   height: 55%;
 }
 input.file:valid + .label .loader.upload--1 .loader__img {
   width: 50px;
-  background: url(./../svg/uploaded1.svg) center center no-repeat;
+  background: url(./svg/uploaded1.svg) center center no-repeat;
 }
 input.file:valid + .label .loader.upload--2 .loader__img {
   width: 50px;
-  background: url(./../svg/uploaded2.svg) center center no-repeat;
+  background: url(./svg/uploaded2.svg) center center no-repeat;
 }
 
 .warning {

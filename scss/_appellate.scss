@@ -4,19 +4,18 @@
 }
 
 .appellate__information {
-  margin-bottom: 44px;
+  margin-bottom: rem(44px);
 }
 
 .appellate__operations {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
-}
+  flex-wrap: wrap;
+  margin-bottom: rem(50px);
+  column-gap: rem(30px);
+  row-gap: rem(30px);
 
-.appelate__operations-item {
-  max-width: 274px;
-  display: flex;
-
-
-
+  @include phonesPortrait {
+    row-gap: rem(50px);
+  }
 }

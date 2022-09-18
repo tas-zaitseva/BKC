@@ -1,27 +1,27 @@
 .text-block__title {
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
 .text-block__list {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
-  line-height: 21px;
+  row-gap: rem(10px);
+  line-height: rem(21px);
 }
 
 .text-block__item {
-  margin-left: 26px;
+  margin-left: rem(26px);
   display: flex;
   align-items: center;
 }
 
 .text-block__item::before {
   content: '';
-  display: block;
+  flex-shrink: 0;
   width: 8px;
   height: 8px;
-  line-height: 21px;
+  line-height: rem(21px);
   background: $red;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: rem(8px);
 }

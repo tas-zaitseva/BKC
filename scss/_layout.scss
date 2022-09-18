@@ -4,12 +4,20 @@
 
 html {
   font-size: $baseFontSize;
+
+  @include phonesPortrait {
+    font-size: calc($baseFontSize - 2px);
+  }
+
+  @include phonesLandscape {
+    font-size: calc($baseFontSize - 2px);
+  }
 }
 
 body {
   font-family: 'Roboto', helvetica, sans-serif;
   font-weight: 300;
-  line-height: 21px;
+  line-height: rem(21px);
   background: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

@@ -1,11 +1,19 @@
 .button {
-  font-size: 14px;
+  font-size: rem(14px);
   line-height: 1.54;
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  padding: 7px 50px;
+  padding: rem(7px) rem(50px);
   background: $red;
   border-radius: 25px;
   text-align: center;
+
+  @include phonesPortrait {
+    font-size: rem(16px);
+  }
+
+  @include phonesLandscape {
+    font-size: rem(16px);
+  }
 }

@@ -1,6 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink"
-     xmlns:ev="http://www.w3.org/2001/xml-events">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <symbol id="pdf1" viewBox="0 0 31 43" preserveAspectRatio="xMidYMid">
     <g fill="currentColor">
       <path d="M18.3182 0.0803223H12.6818C11.9036 0.0803223 11.2727 0.651615 11.2727 1.35642V11.5652C11.2727 12.27 11.9036 12.8413 12.6818 12.8413H18.3182C19.8746 12.8413 21.1364 11.6986 21.1364 10.2891V2.63252C21.1364 1.22299 19.8746 0.0803223 18.3182 0.0803223ZM18.3182 10.2891H14.0909V2.63252H18.3182V10.2891Z"/>
